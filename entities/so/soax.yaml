@@ -10,10 +10,10 @@ entity:
       valid_from: 2026-09-05T18:06:19.913Z
   category: data-analytics
 profile:
-  summary: SOAX provides web data extraction tools, including proxies and scraper APIs.
+  summary: Web data extraction tools that combine proxies and scraper APIs on one platform.
   description: SOAX provides web data extraction tools, including proxies and scraper APIs.
   links:
-    site: https://www.soax.com/pricing/startups
+    site: https://soax.com/
 sources:
   - source_id: src_cf34d658514fba8ae6b67ebbe32ca29ae70d709eecbe8ac3d648589eef0c8aeb
     url: https://www.soax.com/pricing/startups
@@ -22,12 +22,15 @@ offers:
   - offer_id: off_01m1sbzz8emk82dhybqmpt1etw
     offer_slug: startup-discount
     offer_slug_aliases: []
-    title: SOAX Enterprise startup discount
-    summary: Eligible new startup customers receive 50% off SOAX Enterprise plans.
+    title: 50% off SOAX Enterprise plans for startups
+    summary: Qualifying new startup customers that raised up to USD 10 million and incorporated less than 5 years ago get 50% off SOAX Enterprise plans, with a dedicated success manager.
     lifecycle:
       status: active
       effective_from: 2026-09-05T18:06:19.913Z
     economics:
+      consideration:
+        kind: variable
+        description: Qualifying startups get a 50% discount on SOAX Enterprise plans and pay the remaining half of the full-price subscription.
       benefits:
         - benefit_id: ben_discount
           kind: discount
@@ -35,11 +38,10 @@ offers:
             kind: exact
             basis_points: 5000
           applies_to: SOAX Enterprise plans
-          description: 50% off the full-price SOAX Enterprise subscription.
-      consideration:
-        kind: unknown
-        description: An Enterprise subscription remains payable. The public page does not state its base
-          price or a separate participation fee.
+          description: 50% off a full-price SOAX Enterprise subscription.
+        - benefit_id: ben_support
+          kind: other
+          description: Full access to all SOAX data extraction tools and a dedicated customer success manager for integration and troubleshooting.
     eligibility:
       rule:
         kind: all
@@ -51,7 +53,7 @@ offers:
             value:
               type: number
               value: 10000000
-            statement: The startup has raised no more than USD 10 million.
+            statement: The startup has raised up to a maximum of USD 10 million in funding.
           - criterion_id: cri_2
             kind: predicate
             fact: company.age_months
@@ -59,7 +61,7 @@ offers:
             value:
               type: number
               value: 60
-            statement: The startup was incorporated less than five years ago.
+            statement: The startup was incorporated less than 5 years ago.
           - criterion_id: cri_3
             kind: predicate
             fact: company.is_current_customer
@@ -67,7 +69,7 @@ offers:
             value:
               type: boolean
               value: false
-            statement: Only new SOAX customers qualify.
+            statement: New customers only.
     roles:
       terms_authority_entity_id: ent_01m1sbzz8eq9zdm7zw1ay6szv1
       access_operator_entity_id: ent_01m1sbzz8eq9zdm7zw1ay6szv1
@@ -75,6 +77,6 @@ offers:
       availability: public
       method: form
       url: https://www.soax.com/pricing/startups
-    terms_url: https://www.soax.com/pricing/startups
+      instructions: Use Apply now on the SOAX startups page to tell SOAX about the startup.
     source_ids:
       - src_cf34d658514fba8ae6b67ebbe32ca29ae70d709eecbe8ac3d648589eef0c8aeb
