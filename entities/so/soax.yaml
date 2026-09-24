@@ -30,7 +30,7 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: Qualifying startups get a 50% discount on SOAX Enterprise plans and pay the remaining half of the full-price subscription.
+        description: The startup receives a 50% discount on SOAX Enterprise plans.
       benefits:
         - benefit_id: ben_discount
           kind: discount
