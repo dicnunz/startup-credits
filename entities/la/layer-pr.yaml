@@ -22,7 +22,7 @@ programs:
     program_slug: startup-program
     program_slug_aliases: []
     title: Layer PR Startup Program
-    summary: A year-long program that gives startups and small businesses up to 50% off Layer PR invoices, with dedicated PR support, media coverage help and media training.
+    summary: A year-long program in which startups and small businesses get a discount of up to 50% on their monthly or annual Layer PR invoices.
     source_ids:
       - src_533b2db0a7b29129bde7e45424c0ef20244ec1e759cece6a34f1c2c8215576c4
 offers:
@@ -38,7 +38,7 @@ offers:
     economics:
       consideration:
         kind: variable
-        description: Participants pay their monthly or annual Layer PR invoices with a discount of up to 50% throughout the year-long program.
+        description: The startup receives a discount of up to 50% on its monthly or annual invoices throughout the year-long program.
       benefits:
         - benefit_id: ben_discount
           kind: discount
@@ -48,11 +48,7 @@ offers:
           duration:
             kind: exact
             value: P1Y
-          applies_to: Monthly or annual Layer PR invoices
-          description: Up to 50% off monthly or annual invoices throughout the year-long program.
-        - benefit_id: ben_support
-          kind: other
-          description: Dedicated one-on-one PR support in the participant's region, help securing features in global media outlets, and one-on-one media training and mentoring sessions.
+          description: Throughout the year-long program, participants enjoy a discount of up to 50% on their monthly or annual invoices.
     eligibility:
       rule:
         kind: all
