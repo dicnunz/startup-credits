@@ -32,14 +32,13 @@ offers:
     offer_slug_aliases: []
     title: 50% off Sinatra seats for 12 months
     summary: Approved startup teams pay USD 10 per member per month instead of USD 20 for their first 12 months, on every seat in the workspace. LLM provider usage is billed separately by the provider.
-    description: Approved teams receive a single-use code by email and enter it at checkout when starting the monthly plan. At month 13 the seat returns to USD 20, and billing stays month to month throughout.
     lifecycle:
       status: active
       effective_from: 2026-09-05T18:07:37.512Z
     economics:
       consideration:
         kind: variable
-        description: The team pays USD 10 per member per month for each seat for 12 months, then USD 20; checkout collects a card, and the team's LLM provider bills model usage directly at its own rates.
+        description: The startup receives 50% off the $20 seat for its first 12 months, so $10 a member.
       benefits:
         - benefit_id: ben_discount
           kind: discount
@@ -53,16 +52,10 @@ offers:
           description: 50% off the USD 20 seat for the first 12 months, so USD 10 a member.
     eligibility:
       rule:
-        kind: all
-        rules:
-          - criterion_id: cri_1
-            kind: manual
-            reason: vendor-discretion
-            statement: Aimed at teams under 100 people; bigger teams can still apply for review.
-          - criterion_id: cri_2
-            kind: manual
-            reason: vendor-discretion
-            statement: A person reviews each application and checks the company URL; there is no funding stage or investor list to prove.
+        kind: manual
+        criterion_id: cri_1
+        reason: vendor-discretion
+        statement: Aimed at teams under 100 people. Sinatra checks the company URL; there is no funding stage or investor list to prove. Bigger teams can still apply.
     roles:
       terms_authority_entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
       access_operator_entity_id: ent_01m1sc2b1ct8yzpsj0y547ynwc
